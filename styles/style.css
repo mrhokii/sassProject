@@ -1,0 +1,984 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.d-n {
+  display: none;
+}
+
+.container main .height {
+  width: 100%;
+  height: 150px;
+}
+
+/**************************** header *************************/
+.container header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.container header .header-box {
+  width: 70%;
+}
+.container header .header-box .container-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px 0;
+}
+.container header .header-box .container-header .logo {
+  display: flex;
+  align-items: center;
+}
+.container header .header-box .container-header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.container header .header-box .container-header .navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+.container header .header-box .container-header .navbar nav ul li {
+  font-weight: 600;
+  padding: 0 15px;
+}
+.container header .header-box .container-header .navbar nav ul li p {
+  color: #2a2a2a;
+  cursor: pointer;
+}
+.container header .header-box .container-header .navbar nav ul li p:hover {
+  color: #fb5849;
+  transition: all 0.5s;
+}
+
+/************************* body ************************/
+/************************* main ************************/
+/************************* hero section ************************/
+.container main .hero-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: 700px;
+}
+.container main .hero-section .left {
+  background-image: url(../pictures/top-left-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .hero-section .left div {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container main .hero-section .left div h4 {
+  font-family: cursive;
+  color: #fff;
+  font-size: 54px;
+  font-weight: 700;
+}
+.container main .hero-section .left div h6 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+.container main .hero-section .left div .btn a {
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fb5849;
+}
+.container main .hero-section .right {
+  background-image: url(../pictures/slide-02.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/************************* section 2 ************************/
+.container main .section2 {
+  margin-top: 20px;
+  padding-top: 100px;
+  display: flex;
+}
+.container main .section2 .left {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.container main .section2 .left div {
+  width: 70%;
+}
+.container main .section2 .left div h6 {
+  font-size: 15px;
+  color: #fb5849;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container main .section2 .left div h2 {
+  line-height: 40px;
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2a2a2a;
+  padding-right: 120px;
+}
+.container main .section2 .left div p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #2a2a2a;
+}
+.container main .section2 .left div p a {
+  text-decoration: none;
+  color: rgb(38, 103, 255);
+}
+.container main .section2 .left div .img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .section2 .left div .img img {
+  border-radius: 2px;
+}
+.container main .section2 .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.container main .section2 .right div {
+  width: 80%;
+  background-image: url(../pictures/about-video-bg.jpg);
+  background-repeat: round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .section2 .right div i {
+  padding: 20px;
+  background-color: #fb5849;
+  border-radius: 100%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.container main .section2 .right div i:hover {
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+
+/************************* section 3 ************************/
+.container .section3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.container .section3 .txt {
+  width: 70%;
+}
+.container .section3 .txt h6 {
+  font-size: 15px;
+  color: #fb5849;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container .section3 .txt h2 {
+  line-height: 40px;
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2a2a2a;
+}
+
+/************************* section 4 ************************/
+.container main .section4 {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+}
+.container main .section4 .items {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .section4 .items .item1 {
+  width: 20%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: url(../pictures/menu-item-02.jpg);
+  background-repeat: round;
+  overflow: hidden;
+}
+.container main .section4 .items .item1:hover .bottom {
+  transform: translate(0, 0);
+  transition: all 0.6s;
+}
+.container main .section4 .items .item1 .top {
+  width: 100%;
+  height: 50%;
+}
+.container main .section4 .items .item1 .top p {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #fb5849;
+  color: white;
+  border-radius: 4px;
+}
+.container main .section4 .items .item1 .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #fb5849;
+  transform: translate(0, 120px);
+}
+.container main .section4 .items .item1 .bottom p {
+  margin: 25px;
+}
+.container main .section4 .items .item2 {
+  width: 20%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: url(../pictures/menu-item-03.jpg);
+  background-repeat: round;
+  overflow: hidden;
+}
+.container main .section4 .items .item2:hover .bottom {
+  transform: translate(0, 0);
+  transition: all 0.6s;
+}
+.container main .section4 .items .item2 .top {
+  width: 100%;
+  height: 50%;
+}
+.container main .section4 .items .item2 .top p {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #fb5849;
+  color: white;
+  border-radius: 4px;
+}
+.container main .section4 .items .item2 .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #fb5849;
+  transform: translate(0, 120px);
+}
+.container main .section4 .items .item2 .bottom p {
+  margin: 25px;
+}
+.container main .section4 .items .item3 {
+  width: 20%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: url(../pictures/menu-item-04.jpg);
+  background-repeat: round;
+  overflow: hidden;
+}
+.container main .section4 .items .item3:hover .bottom {
+  transform: translate(0, 0);
+  transition: all 0.6s;
+}
+.container main .section4 .items .item3 .top {
+  width: 100%;
+  height: 50%;
+}
+.container main .section4 .items .item3 .top p {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #fb5849;
+  color: white;
+  border-radius: 4px;
+}
+.container main .section4 .items .item3 .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #fb5849;
+  transform: translate(0, 120px);
+}
+.container main .section4 .items .item3 .bottom p {
+  margin: 25px;
+}
+.container main .section4 .items .item4 {
+  width: 20%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: url(../pictures/menu-item-05.jpg);
+  background-repeat: round;
+  overflow: hidden;
+}
+.container main .section4 .items .item4:hover .bottom {
+  transform: translate(0, 0);
+  transition: all 0.6s;
+}
+.container main .section4 .items .item4 .top {
+  width: 100%;
+  height: 50%;
+}
+.container main .section4 .items .item4 .top p {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #fb5849;
+  color: white;
+  border-radius: 4px;
+}
+.container main .section4 .items .item4 .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #fb5849;
+  transform: translate(0, 120px);
+}
+.container main .section4 .items .item4 .bottom p {
+  margin: 25px;
+}
+
+/************************* section 5 ************************/
+.container .section5 {
+  width: 100%;
+}
+.container .section5 .txt {
+  text-align: center;
+}
+.container .section5 .txt h6 {
+  font-size: 15px;
+  color: #fb5849;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container .section5 .txt h2 {
+  line-height: 40px;
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2a2a2a;
+}
+
+/************************* section 6 ************************/
+.container main .section6 {
+  display: flex;
+  justify-content: center;
+}
+.container main .section6 .chefs {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .section6 .chefs .chef1 {
+  width: 30%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+}
+.container main .section6 .chefs .chef1:hover {
+  border: 1px solid #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef1:hover .top .media {
+  opacity: 1;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef1:hover .bottom h2 {
+  color: #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef1 .top {
+  background-image: url(../pictures/chefs-01.jpg);
+  background-repeat: round;
+  width: 100%;
+  height: 80%;
+}
+.container main .section6 .chefs .chef1 .top .media {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 87, 87, 0.873);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.container main .section6 .chefs .chef1 .top .media i {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.container main .section6 .chefs .chef1 .top .media i:hover {
+  background-color: #fb5849;
+  transition: all 0.5s;
+}
+.container main .section6 .chefs .chef1 .bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2a2a2a;
+}
+.container main .section6 .chefs .chef2 {
+  width: 30%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+}
+.container main .section6 .chefs .chef2:hover {
+  border: 1px solid #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef2:hover .top .media {
+  opacity: 1;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef2:hover .bottom h2 {
+  color: #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef2 .top {
+  background-image: url(../pictures/chefs-02.jpg);
+  background-repeat: round;
+  width: 100%;
+  height: 80%;
+}
+.container main .section6 .chefs .chef2 .top .media {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 87, 87, 0.873);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.container main .section6 .chefs .chef2 .top .media i {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.container main .section6 .chefs .chef2 .top .media i:hover {
+  background-color: #fb5849;
+  transition: all 0.5s;
+}
+.container main .section6 .chefs .chef2 .bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2a2a2a;
+}
+.container main .section6 .chefs .chef3 {
+  width: 30%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+}
+.container main .section6 .chefs .chef3:hover {
+  border: 1px solid #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef3:hover .top .media {
+  opacity: 1;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef3:hover .bottom h2 {
+  color: #fb5849;
+  transition: all 0.4s;
+}
+.container main .section6 .chefs .chef3 .top {
+  background-image: url(../pictures/chefs-03.jpg);
+  background-repeat: round;
+  width: 100%;
+  height: 80%;
+}
+.container main .section6 .chefs .chef3 .top .media {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 87, 87, 0.873);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.container main .section6 .chefs .chef3 .top .media i {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.container main .section6 .chefs .chef3 .top .media i:hover {
+  background-color: #fb5849;
+  transition: all 0.5s;
+}
+.container main .section6 .chefs .chef3 .bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2a2a2a;
+}
+
+/************************* section 7 ************************/
+.container main .section7 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.container main .section7 .food {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .section7 .food .food1 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container main .section7 .food .food1 p {
+  color: #fb5849;
+  font-weight: 600;
+}
+
+/************************* section 8 ************************/
+.container main .section8 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container main .section8 .items {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container main .section8 .items .items-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container main .section8 .items .items-left .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container main .section8 .items .items-left .item .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #2a2a2a;
+}
+.container main .section8 .items .items-left .item .img img {
+  border-radius: 4px;
+}
+.container main .section8 .items .items-left .item h4 {
+  padding: 24px 18px;
+  background-color: #fb5849;
+  color: #fff;
+  font-size: 24px;
+}
+.container main .section8 .items .items-left .item .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .section8 .items .items-left .item .p h4 {
+  border-radius: 8px;
+}
+.container main .section8 .items .items-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container main .section8 .items .items-right .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container main .section8 .items .items-right .item .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #2a2a2a;
+}
+.container main .section8 .items .items-right .item .img img {
+  border-radius: 4px;
+}
+.container main .section8 .items .items-right .item h4 {
+  padding: 24px 18px;
+  background-color: #fb5849;
+  color: #fff;
+  font-size: 24px;
+}
+.container main .section8 .items .items-right .item .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .section8 .items .items-right .item .p h4 {
+  border-radius: 8px;
+}
+
+/************************* footer ************************/
+.container footer {
+  width: 100%;
+  background-color: #fb5849;
+  display: flex;
+}
+.container footer .left {
+  padding: 30px 0;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container footer .left .media {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container footer .left .media i {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #fb5849;
+  cursor: pointer;
+}
+.container footer .left .media i:hover {
+  color: #2a2a2a;
+  transition: all 0.5s;
+}
+.container footer .center {
+  padding: 30px 0;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container footer .right {
+  padding: 30px 0;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .container header .header-box .container-header .navbar {
+    display: none;
+  }
+  .container header .header-box .container-header i {
+    display: block;
+    justify-content: end;
+  }
+  .container header .header-box .container-header .logo {
+    justify-content: start;
+  }
+  .container header .header-box .container-header .logo img {
+    width: 100px;
+    height: 50px;
+  }
+  .container main .hero-section {
+    height: 400px;
+    grid-template-columns: 1fr;
+  }
+  .container main .hero-section .right {
+    display: none;
+  }
+  .container main .hero-section .left {
+    width: 100%;
+  }
+  .container main .section2 {
+    flex-direction: column;
+  }
+  .container main .section2 .left {
+    width: 100%;
+    justify-content: start;
+    padding-left: 30px;
+  }
+  .container main .section2 .left div h2 {
+    padding-right: 0;
+  }
+  .container main .section2 .left div .img img {
+    width: 30%;
+  }
+  .container main .section2 .right {
+    width: 100%;
+    height: 300px;
+    justify-content: start;
+    padding-left: 30px;
+  }
+  .container main .section4 .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .container main .section4 .items .item2, .container main .section4 .items .item3, .container main .section4 .items .item4 {
+    display: none;
+  }
+  .container main .section4 .items .item1 {
+    width: 70%;
+  }
+  .container main .section6 .chefs {
+    flex-direction: column;
+  }
+  .container main .section6 .chefs .chef1 {
+    width: 100%;
+  }
+  .container main .section6 .chefs .chef2, .container main .section6 .chefs .chef3 {
+    display: none;
+  }
+  .container main .section7 {
+    display: none;
+  }
+  .container main .section8 .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container main .section8 .items .items-left .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-left .item .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #2a2a2a;
+  }
+  .container main .section8 .items .items-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container main .section8 .items .items-right .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-right .item .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #2a2a2a;
+  }
+  .container footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .container footer .left, .container footer .center, .container footer .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .container header .header-box .container-header .navbar {
+    display: none;
+  }
+  .container header .header-box .container-header i {
+    display: block;
+    justify-content: end;
+  }
+  .container header .header-box .container-header .logo {
+    justify-content: start;
+  }
+  .container header .header-box .container-header .logo img {
+    width: 100px;
+    height: 50px;
+  }
+  .container main .hero-section {
+    height: 400px;
+    grid-template-columns: 1fr;
+  }
+  .container main .hero-section .right {
+    display: none;
+  }
+  .container main .hero-section .left {
+    width: 100%;
+  }
+  .container main .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container main .section2 .left {
+    width: 100%;
+    justify-content: start;
+    padding-left: 30px;
+  }
+  .container main .section2 .left div h2 {
+    padding-right: 0;
+  }
+  .container main .section2 .left div .img img {
+    width: 30%;
+  }
+  .container main .section2 .right {
+    width: 100%;
+    height: 300px;
+    justify-content: start;
+    padding-left: 30px;
+  }
+  .container main .section4 .items {
+    align-items: center;
+    gap: 30px;
+  }
+  .container main .section4 .items .item3, .container main .section4 .items .item4 {
+    display: none;
+  }
+  .container main .section4 .items .item1, .container main .section4 .items .item2 {
+    width: 50%;
+  }
+  .container main .section6 .chefs {
+    gap: 20px;
+  }
+  .container main .section6 .chefs .chef1, .container main .section6 .chefs .chef3 {
+    width: 50%;
+  }
+  .container main .section6 .chefs .chef2 {
+    display: none;
+  }
+  .container main .section7 {
+    display: none;
+  }
+  .container main .section8 .items {
+    display: flex;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .container main .section8 .items .items-left .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-left .item .title {
+    display: flex;
+    flex-direction: column;
+    color: #2a2a2a;
+  }
+  .container main .section8 .items .items-left .item .p {
+    justify-content: start;
+  }
+  .container main .section8 .items .items-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container main .section8 .items .items-right .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container main .section8 .items .items-right .item .title {
+    display: flex;
+    flex-direction: column;
+    color: #2a2a2a;
+  }
+  .container main .section8 .items .items-right .item .p {
+    justify-content: start;
+  }
+  .container footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .container footer .left, .container footer .center, .container footer .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
